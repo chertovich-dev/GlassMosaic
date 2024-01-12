@@ -1,0 +1,170 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "27d5b0f3d3fc63aae55476a6a85f190e",
+    "entities": [
+      {
+        "tableName": "mosaics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`mosaic_id` INTEGER NOT NULL, `state` INTEGER NOT NULL, PRIMARY KEY(`mosaic_id`))",
+        "fields": [
+          {
+            "fieldPath": "mosaicId",
+            "columnName": "mosaic_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "mosaic_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "elements",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`element_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `mosaic_id` INTEGER NOT NULL, `num` INTEGER NOT NULL, `color` INTEGER NOT NULL, `x` REAL NOT NULL, `y` REAL NOT NULL, `z` INTEGER NOT NULL, `rotation` REAL NOT NULL, FOREIGN KEY(`mosaic_id`) REFERENCES `mosaics`(`mosaic_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "elementId",
+            "columnName": "element_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mosaicId",
+            "columnName": "mosaic_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "num",
+            "columnName": "num",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "x",
+            "columnName": "x",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "y",
+            "columnName": "y",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "z",
+            "columnName": "z",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rotation",
+            "columnName": "rotation",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "element_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "mosaics",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "mosaic_id"
+            ],
+            "referencedColumns": [
+              "mosaic_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "points",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`points` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `element_id` INTEGER NOT NULL, `num` INTEGER NOT NULL, `x` REAL NOT NULL, `y` REAL NOT NULL, FOREIGN KEY(`element_id`) REFERENCES `elements`(`element_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "pointId",
+            "columnName": "points",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "elementId",
+            "columnName": "element_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "num",
+            "columnName": "num",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "x",
+            "columnName": "x",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "y",
+            "columnName": "y",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "points"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "elements",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "element_id"
+            ],
+            "referencedColumns": [
+              "element_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '27d5b0f3d3fc63aae55476a6a85f190e')"
+    ]
+  }
+}

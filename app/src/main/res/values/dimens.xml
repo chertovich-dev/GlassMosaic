@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="mosaic_margin_horizontal">8dp</dimen>
+    <dimen name="mosaic_margin_vertical">8dp</dimen>
+
+</resources>

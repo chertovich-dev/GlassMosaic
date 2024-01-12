@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Glass Mosaic</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="main_fragment_label">Main Fragment</string>
+
+    <string name="first">Первая кнопка</string>
+    <string name="second">Вторая кнопка</string>
+    <string name="show_mosaic">Показать мозаику</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="group1">Животные</string>
+    <string name="group2">Еда</string>
+</resources>

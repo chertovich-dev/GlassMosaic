@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mosaics>
+    <Group id="1">
+
+
+        <Mosaic id="1" file="fox2" />
+        <Mosaic id="2" file="cat" />
+
+        <Mosaic id="3" file="penguin" />
+        <Mosaic id="4" file="fox2" />
+
+        <Mosaic id="5" file="cat" />
+        <Mosaic id="6" file="penguin" />
+
+        <Mosaic id="7" file="fox2" />
+        <Mosaic id="8" file="cat" />
+
+        <Mosaic id="9" file="penguin" />
+        <Mosaic id="10" file="fox2" />
+
+        <Mosaic id="11" file="cat" />
+        <Mosaic id="12" file="penguin" />
+
+        <Mosaic id="13" file="fox2" />
+        <Mosaic id="14" file="cat" />
+
+        <Mosaic id="15" file="penguin" />
+        <Mosaic id="16" file="fox2" />
+
+        <Mosaic id="17" file="cat" />
+        <Mosaic id="18" file="penguin" />
+
+        <Mosaic id="19" file="fox2" />
+        <Mosaic id="20" file="cat" />
+
+        <Mosaic id="21" file="penguin" />
+        <Mosaic id="22" file="fox2" />
+
+        <Mosaic id="23" file="cat" />
+        <Mosaic id="24" file="penguin" />
+
+        <Mosaic id="25" file="fox2" />
+        <Mosaic id="26" file="cat" />
+
+        <Mosaic id="27" file="fox2" />
+        <Mosaic id="28" file="cat" />
+
+        <Mosaic id="29" file="penguin" />
+        <Mosaic id="30" file="fox2" />
+
+        <Mosaic id="31" file="cat" />
+        <Mosaic id="32" file="penguin" />
+
+        <Mosaic id="33" file="fox2" />
+        <Mosaic id="34" file="cat" />
+
+        <Mosaic id="35" file="penguin" />
+        <Mosaic id="36" file="fox2" />
+
+        <Mosaic id="37" file="cat" />
+        <Mosaic id="38" file="penguin" />
+
+        <Mosaic id="39" file="fox2" />
+        <Mosaic id="40" file="cat" />
+    </Group>
+
+    <Group id="2">
+        <Mosaic id="100" file="apple" />
+    </Group>
+</Mosaics>

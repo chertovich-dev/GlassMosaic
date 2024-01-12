@@ -1,0 +1,137 @@
+<Mosaic>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.1"
+            y="0.1" />
+        <Point
+            x="0.3"
+            y="0.1" />
+        <Point
+            x="0.3"
+            y="0.3" />
+        <Point
+            x="0.1"
+            y="0.3" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.1"
+            y="0.4" />
+        <Point
+            x="0.3"
+            y="0.4" />
+        <Point
+            x="0.3"
+            y="0.6" />
+        <Point
+            x="0.1"
+            y="0.6" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.1"
+            y="0.7" />
+        <Point
+            x="0.3"
+            y="0.7" />
+        <Point
+            x="0.3"
+            y="0.9" />
+        <Point
+            x="0.1"
+            y="0.9" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.3702"
+            y="0.102" />
+        <Point
+            x="0.6428"
+            y="0.103" />
+        <Point
+            x="0.6384"
+            y="0.3656" />
+        <Point
+            x="0.3742"
+            y="0.365800000000001" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.376"
+            y="0.373" />
+        <Point
+            x="0.638"
+            y="0.371" />
+        <Point
+            x="0.637"
+            y="0.646" />
+        <Point
+            x="0.376"
+            y="0.647" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.6442"
+            y="0.6486" />
+        <Point
+            x="0.6452"
+            y="0.3702" />
+        <Point
+            x="0.8962"
+            y="0.3712" />
+        <Point
+            x="0.896"
+            y="0.649800000000001" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.646"
+            y="0.104" />
+        <Point
+            x="0.8952"
+            y="0.1048" />
+        <Point
+            x="0.896"
+            y="0.3662" />
+        <Point
+            x="0.644"
+            y="0.3652" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.38"
+            y="0.8974" />
+        <Point
+            x="0.379"
+            y="0.6514" />
+        <Point
+            x="0.634"
+            y="0.6514" />
+        <Point
+            x="0.6356"
+            y="0.8974" />
+    </Element>
+    <Element
+        color="#FF801A">
+        <Point
+            x="0.6382"
+            y="0.8974" />
+        <Point
+            x="0.6372"
+            y="0.6534" />
+        <Point
+            x="0.9002"
+            y="0.6542" />
+        <Point
+            x="0.9002"
+            y="0.8984" />
+    </Element>
+</Mosaic>

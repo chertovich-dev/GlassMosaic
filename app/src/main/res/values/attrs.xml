@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MosaicView">
+        <attr name="mode" format="enum">
+            <enum name="mosaic" value="0" />
+            <enum name="list" value="1" />
+            <enum name="test" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
